@@ -20,8 +20,6 @@ namespace AplicationServices.DTOs.Patient
 
         public string Disease { get; set; } = null!;
 
-        public DateTime CreationDate { get; set; }
-
         public Guid CreationUser { get; set; }
     }
 }

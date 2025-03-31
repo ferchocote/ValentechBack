@@ -25,7 +25,7 @@ namespace PruebaAppApi.Controllers
         /// <param name="GetAllPatientDto"></param>
         /// <returns></returns>
         /// <author>Diego Molina</author>
-        [HttpGet("GetAllPatient")]
+        [HttpGet]
         public async Task<RequestResult<List<GetAllPatientDto>>> Get(string? name, string? Disease)
         {
             return await _patientAppServices.GetAllPatient(name, Disease);
@@ -37,7 +37,7 @@ namespace PruebaAppApi.Controllers
         /// <param name="SavePatient"></param>
         /// <returns></returns>
         /// <author>Diego Molina</author>
-        [HttpPost("SavePatient")]
+        [HttpPost]
         public async Task<RequestResult<SavePatientDto>> SavePatient(SavePatientDto patientDto)
         {
             return await _patientAppServices.SavePatient(patientDto);
